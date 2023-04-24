@@ -39,4 +39,8 @@ nav span {
 footer{
     text-align: center;
     border: 1px solid black;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 25px;
+  margin: 10px;
 }

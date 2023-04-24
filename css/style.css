@@ -50,7 +50,7 @@ nav span {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid white;
   text-align: center;
   padding: 25px;
   margin: 10px;
@@ -67,12 +67,27 @@ nav span {
   margin: 10px;
 }
 
-#statsBoss span p {
-  margin: 0 10px;
+#statsBoss span img {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#newMonster {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
 }
 
 #monsterForm {
   display: flex;
+  flex-direction: column;
+}
+
+#boss {
+  padding: 20px;
+  background-color: grey;
 }
 
 footer {
@@ -80,5 +95,5 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
 }

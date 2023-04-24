@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Sans+Narrow&display=swap");
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-h1{
-    font-family: 'pt sans narrow', sans-serif;
-    font-weight: 400;
+h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
 }
 
-h2{
-    font-family: 'pt sans narrow', sans-serif;
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
-h3, h4, h5, h6{
-    font-family: 'PT Sans Narrow', sans-serif;
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 nav {
@@ -36,6 +41,9 @@ nav img {
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 nav span {
@@ -48,25 +56,29 @@ nav span {
   margin: 10px;
 }
 
-#statsBoss{
-    display: flex;
-    align-items: center;
+#statsBoss {
+  display: flex;
+  align-items: center;
 }
 
-#statsBoss span{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+#statsBoss span {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
 }
 
-#statsBoss span p{
-    margin: 0 10px;
+#statsBoss span p {
+  margin: 0 10px;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    border: 1px solid black;
+#monsterForm {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid black;
 }

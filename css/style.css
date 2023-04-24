@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Sans+Narrow&display=swap");
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'PT Sans Narrow', sans-serif;
-}
 
 nav {
   display: flex;
@@ -32,13 +25,6 @@ nav span {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  border: 1px solid black;
-  text-align: center;
-}
-
-footer{
-    text-align: center;
-    border: 1px solid black;
   border: 1px solid grey;
   text-align: center;
   padding: 25px;

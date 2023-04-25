@@ -34,27 +34,56 @@
               placeholder="Description du monstre"
             ></textarea>
             <div class="monsterTypeSelector">
-              <img src="img/realMonsters/unicorn.png" alt="Licorne monstre" />
-              <img src="img/realMonsters/bomb.png" alt="Licorne monstre" />
-              <img src="img/realMonsters/poop.png" alt="Licorne monstre" />
-              <img src="img/realMonsters/spider.png" alt="Licorne monstre" />
-              <img src="img/realMonsters/fish.png" alt="Licorne monstre" />
+              <input
+                class="monsterTypeSelectorButton"
+                type="radio"
+                name="monsterType"
+                id="monster1"
+                value="monster1"
+                checked
+              />
+              <input
+                class="monsterTypeSelectorButton"
+                type="radio"
+                name="monsterType"
+                id="monster2"
+                value="monster2"
+              />
+              <input
+                class="monsterTypeSelectorButton"
+                type="radio"
+                name="monsterType"
+                id="monster3"
+              />
+              <input
+                class="monsterTypeSelectorButton"
+                type="radio"
+                name="monsterType"
+                id="monster4"
+              />
+              <input
+                class="monsterTypeSelectorButton"
+                type="radio"
+                name="monsterType"
+                id="monster5"
+              />
             </div>
             <div class="monsterStatsSelector">
               <div id="monsterStatsAttackSection">
                 <img src="img/blade.svg" alt="" />
                 <input type="text" name="" id="" />
               </div>
-              <span>+</span>
+              <span> + </span>
               <div id="monsterStatsShieldSection">
                 <img src="img/shield.svg" alt="" />
                 <input type="text" name="" id="" />
               </div>
-              <span>+</span>
+              <span> + </span>
               <div id="monsterStatsHealthSection">
                 <img src="img/heart.svg" alt="" />
                 <input type="text" name="" id="" />
               </div>
+              <span> = </span>
               <div id="monsterStatsHealthSection">
                 <img src="img/heart.svg" alt="" />
                 <input type="text" name="" id="" />
@@ -66,7 +95,7 @@
         <div id="boss">
           <h3>Le Boss</h3>
           <img
-            src="./img/realMonsters/slime.png"
+            src="./img/realMonsters/monster6.png"
             alt="boss"
             class="animate__animated animate__tada animate__infinite infinite"
           />

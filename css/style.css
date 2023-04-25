@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Sans+Narrow&display=swap");
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #121212;
@@ -57,6 +63,11 @@ nav span {
   color: white;
 }
 
+.aboutMain {
+  padding: 50px;
+  text-align: center;
+}
+
 nav #aboutlink:hover {
   background-color: white;
   color: black;
@@ -71,6 +82,8 @@ nav #aboutlink:hover {
 }
 
 #imgAbout {
+  border-radius: 15px;
+  padding: 10px;
   background-color: white;
   height: 100px;
   width: 100px;
@@ -105,7 +118,7 @@ nav #aboutlink:hover {
 
 #monsterFormSection {
   background-color: #363636;
-  padding: 25px;
+  padding: 20px;
   border-radius: 15px;
 }
 
@@ -135,18 +148,45 @@ textarea {
 
 .monsterTypeSelector {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 10px;
-}
-
-.monsterTypeSelector img {
-  width: 150px;
-  background-color: #515050;
+  background-color: #3d3d3d;
+  padding: 10px;
   border-radius: 15px;
 }
 
+.monsterTypeSelectorButton {
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  border: 2px solid #ddd !important;
+  border-radius: 15px;
+}
+
+#monster1 {
+  background-image: url("../img/realMonsters/monster1.png");
+}
+#monster2 {
+  background-image: url("../img/realMonsters/monster2.png");
+}
+#monster3 {
+  background-image: url("../img/realMonsters/monster3.png");
+}
+#monster4 {
+  background-image: url("../img/realMonsters/monster4.png");
+}
+#monster5 {
+  background-image: url("../img/realMonsters/monster5.png");
+}
+
+.monsterTypeSelectorButton:checked {
+  border: 4px rebeccapurple solid !important;
+}
+
 .monsterStatsSelector div img {
+  display: inline;
   background-color: white;
   padding: 5px;
   border-radius: 5px;
@@ -154,7 +194,18 @@ textarea {
 
 .monsterStatsSelector {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.monsterStatsSelector input {
+  width: 100px;
+}
+
+.monsterStatsSelector span {
+  margin: 10px;
+}
+
 footer {
   display: flex;
   justify-content: center;

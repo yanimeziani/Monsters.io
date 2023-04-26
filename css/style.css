@@ -216,13 +216,43 @@ textarea {
 }
 
 .monsterBackgroundSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #363636;
-  padding: 20px;
-  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.monsterBackgroundButton {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd !important;
+  border-radius: 50%;
+}
+
+.monsterBackgroundButton:checked {
+  border: 2px solid rebeccapurple !important;
+}
+
+#whiteBackground {
+  background-color: white !important;
+}
+
+#redBackground {
+  background-color: red !important;
+}
+
+#orangeBackground {
+  background-color: orange !important;
+}
+
+#yellowBackground {
+  background-color: yellow !important;
+}
+
+#greenBackground {
+  background-color: green !important;
+}
+
+#blueBackground {
+  background-color: blue !important;
 }
 
 footer {

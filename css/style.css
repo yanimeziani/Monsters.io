@@ -191,6 +191,7 @@ textarea {
 }
 
 .monsterStatsSelector {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -253,6 +254,12 @@ textarea {
 
 #blueBackground {
   background-color: blue !important;
+}
+
+#createButton {
+  padding: 10px;
+  background-color: #121212 !important;
+  border-radius: 15px;
 }
 
 footer {

@@ -134,6 +134,7 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   border: none;
+  margin-bottom: 5px;
 }
 
 #boss {
@@ -149,17 +150,14 @@ textarea {
 .monsterTypeSelector {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 10px;
-  background-color: #3d3d3d;
-  padding: 10px;
-  border-radius: 15px;
+  justify-content: start;
+  margin-top: 10px;
 }
 
 .monsterTypeSelectorButton {
   appearance: none;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background-size: contain;
   border: 2px solid #ddd !important;
   border-radius: 15px;
@@ -196,14 +194,35 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.monsterStatsSection {
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #ddd !important;
+  display: flex;
+  align-items: center;
 }
 
 .monsterStatsSelector input {
   width: 100px;
+  text-align: right;
 }
 
 .monsterStatsSelector span {
   margin: 10px;
+  font-size: 1.5em;
+}
+
+.monsterBackgroundSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #363636;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 footer {
@@ -212,4 +231,5 @@ footer {
   align-items: center;
   margin-top: 10px;
   border: 1px solid white;
+  border-radius: 15px;
 }

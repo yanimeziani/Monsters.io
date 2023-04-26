@@ -18,7 +18,7 @@
         <a href="index.html"><img src="./img/icon.svg" alt="icon" /></a>
         <h1>Monsters.io</h1>
       </div>
-      <a href="about.html"><span>?</span></a>
+      <a href="about.html"><span id="aboutlink">?</span></a>
     </nav>
     <main>
       <div id="newMonster">
@@ -35,7 +35,7 @@
               name="monsterDescription"
               id="monsterDescription"
               cols="30"
-              rows="10"
+              rows="5"
               placeholder="Description du monstre"
             ></textarea>
             <div class="monsterStatsSelector">
@@ -96,37 +96,37 @@
 
             <div class="monsterBackgroundSection">
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton whiteBackground"
                 type="radio"
                 name="monsterBackground"
                 id="whiteBackground"
               />
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton redBackground"
                 type="radio"
                 name="monsterBackground"
                 id="redBackground"
               />
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton orangeBackground"
                 type="radio"
                 name="monsterBackground"
                 id="orangeBackground"
               />
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton yellowBackground"
                 type="radio"
                 name="monsterBackground"
                 id="yellowBackground"
               />
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton greenBackground"
                 type="radio"
                 name="monsterBackground"
                 id="greenBackground"
               />
               <input
-                class="monsterBackgroundButton"
+                class="monsterBackgroundButton blueBackground"
                 type="radio"
                 name="monsterBackground"
                 id="blueBackground"
@@ -138,11 +138,12 @@
         </div>
         <div id="boss">
           <h3>Le Boss</h3>
-          <img
+          <img src="./img/realMonsters/monster6.png" alt="boss" />
+          <!--<img
             src="./img/realMonsters/monster6.png"
             alt="boss"
             class="animate__animated animate__tada animate__infinite infinite"
-          />
+          />-->
           <p id="bossDescription">Je suis le boss</p>
           <div id="statsBoss">
             <div>
@@ -160,12 +161,105 @@
           </div>
         </div>
       </div>
-      <div id="monsterCards">
-        <div class="monsterCard"></div>
-        <div class="monsterCard"></div>
-        <div class="monsterCard"></div>
-        <div class="monsterCard"></div>
-        <div class="monsterCard"></div>
+      <div id="monsterCardsSection">
+        <h2>CARTES</h2>
+        <div class="monsterCards">
+          <div class="monsterCard redBackground">
+            <h3>Ben Laden</h3>
+            <img src="img/realMonsters/monster1.png" alt="" />
+            <p>Je suis le boss</p>
+            <div id="stats">
+              <div class="stat">
+                <img src="img/blade.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/shield.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/heart.svg" alt="" />
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="monsterCard orangeBackground">
+            <h3>Ben Laden</h3>
+            <img src="img/realMonsters/monster2.png" alt="" />
+            <p>Je suis le boss</p>
+            <div id="stats">
+              <div class="stat">
+                <img src="img/blade.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/shield.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/heart.svg" alt="" />
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="monsterCard yellowBackground">
+            <h3>Ben Laden</h3>
+            <img src="img/realMonsters/monster3.png" alt="" />
+            <p>Je suis le boss</p>
+            <div id="stats">
+              <div class="stat">
+                <img src="img/blade.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/shield.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/heart.svg" alt="" />
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="monsterCard greenBackground">
+            <h3>Ben Laden</h3>
+            <img src="img/realMonsters/monster4.png" alt="" />
+            <p>Je suis le boss</p>
+            <div id="stats">
+              <div class="stat">
+                <img src="img/blade.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/shield.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/heart.svg" alt="" />
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="monsterCard blueBackground">
+            <h3>Ben Laden</h3>
+            <img src="img/realMonsters/monster5.png" alt="" />
+            <p>Je suis le boss</p>
+            <div id="stats">
+              <div class="stat">
+                <img src="img/blade.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/shield.svg" alt="" />
+                <p>1</p>
+              </div>
+              <div class="stat">
+                <img src="img/heart.svg" alt="" />
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer><p>© Copyright 2023 Francis Deslauriers et Yani Meziani</p></footer>

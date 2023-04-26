@@ -34,7 +34,7 @@ nav {
   align-content: center;
   align-items: center;
   padding: 0 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 2px solid #ddd;
 }
 
 .navBar {
@@ -52,13 +52,13 @@ nav img {
   padding: 5px;
 }
 
-nav span {
+nav #aboutlink {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 2px solid #ddd;
   padding: 15px;
   color: white;
 }
@@ -69,8 +69,8 @@ nav span {
 }
 
 nav #aboutlink:hover {
-  background-color: white;
-  color: black;
+  border: 2px solid #aaa;
+  color: white;
   cursor: pointer;
 }
 
@@ -135,6 +135,7 @@ textarea {
   font-size: 1.5em;
   border: none;
   margin-bottom: 5px;
+  resize: none !important;
 }
 
 #boss {
@@ -150,7 +151,7 @@ textarea {
 .monsterTypeSelector {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -218,6 +219,8 @@ textarea {
 
 .monsterBackgroundSection {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .monsterBackgroundButton {
@@ -232,41 +235,89 @@ textarea {
   border: 2px solid rebeccapurple !important;
 }
 
-#whiteBackground {
+.whiteBackground {
   background-color: white !important;
 }
 
-#redBackground {
-  background-color: red !important;
+.redBackground {
+  background-color: #e64a19 !important;
 }
 
-#orangeBackground {
-  background-color: orange !important;
+.orangeBackground {
+  background-color: #ffa000 !important;
 }
 
-#yellowBackground {
-  background-color: yellow !important;
+.yellowBackground {
+  background-color: #fbc02d !important;
 }
 
-#greenBackground {
-  background-color: green !important;
+.greenBackground {
+  background-color: #388e3c !important;
 }
 
-#blueBackground {
-  background-color: blue !important;
+.blueBackground {
+  background-color: #0288d1 !important;
 }
 
 #createButton {
   padding: 10px;
   background-color: #121212 !important;
+  border-radius: 5px;
+}
+
+#createButton:hover {
+  color: #121212;
+  padding: 10px;
+  background-color: #efefef !important;
+  border-radius: 5px;
+}
+
+.monsterCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  color: #121212;
+  text-align: center;
+}
+
+#monsterCardsSection {
+  padding: 15px;
+}
+
+.monsterCard {
+  width: 270px;
   border-radius: 15px;
+  padding: 10px;
+}
+
+.monsterCard img {
+  width: 200px;
+}
+.monsterCards #stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.monsterCards .stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.monsterCard .stat img {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  border: 1px solid white;
-  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
 }

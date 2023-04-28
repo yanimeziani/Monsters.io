@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/generator.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Monsters.io</title>
     <link
@@ -41,17 +42,32 @@
             <div class="monsterStatsSelector">
               <div class="monsterStatsSection" id="monsterStatsAttackSection">
                 <img src="img/blade.svg" alt="blade" />
-                <input type="text" name="attackPoints" id="attackPoints" value="0" />
+                <input
+                  type="text"
+                  name="attackPoints"
+                  id="attackPoints"
+                  value="0"
+                />
               </div>
               <span> + </span>
               <div class="monsterStatsSection" id="monsterStatsShieldSection">
                 <img src="img/shield.svg" alt="shield" />
-                <input type="text" name="defensePoints" id="defensePoints" value="0" />
+                <input
+                  type="text"
+                  name="defensePoints"
+                  id="defensePoints"
+                  value="0"
+                />
               </div>
               <span> + </span>
               <div class="monsterStatsSection" id="monsterStatsHealthSection">
                 <img src="img/heart.svg" alt="hp" />
-                <input type="text" name="healthPoints" id="healthPoints" value="0" />
+                <input
+                  type="text"
+                  name="healthPoints"
+                  id="healthPoints"
+                  value="0"
+                />
               </div>
               <span> = </span>
               <div class="monsterStatsSection" id="monsterStatsTotalSection">
@@ -148,10 +164,9 @@
                 value="blue"
               />
             </div>
-            <div id="error" class="hidden">
-
-            </div>
+            <div id="error" class="hidden"></div>
             <input id="createButton" type="submit" value="Créer" />
+            <p id="generator">Générer un monstre avec ChatGPT.</p>
           </form>
         </div>
         <div id="boss">
@@ -209,18 +224,10 @@
               </div>
             </div>!-->
           </div>
-          <div id="monsterCard2" class="monsterCard greyBackground">
-            
-          </div>
-          <div id="monsterCard3" class="monsterCard greyBackground">
-            
-          </div>
-          <div id="monsterCard4" class="monsterCard greyBackground">
-            
-          </div>
-          <div id="monsterCard5" class="monsterCard greyBackground">
-            
-          </div>
+          <div id="monsterCard2" class="monsterCard greyBackground"></div>
+          <div id="monsterCard3" class="monsterCard greyBackground"></div>
+          <div id="monsterCard4" class="monsterCard greyBackground"></div>
+          <div id="monsterCard5" class="monsterCard greyBackground"></div>
         </div>
       </div>
     </main>

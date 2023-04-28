@@ -7,7 +7,7 @@ let monsterAttack = document.querySelector("#attackPoints");
 let monsterDefense = document.querySelector("#defensePoints");
 let monsterHeatlh = document.querySelector("#healthPoints");
 let monsterTotalPoints = document.querySelector("#totalPoints");
-
+let generatorButton = document.querySelector("#generator");
 let bossAttack = document.querySelector("#bossAttackPoints");
 let bossDefense = document.querySelector("#bossDefensePoints");
 let bossHeatlh = document.querySelector("#bossHP");
@@ -20,6 +20,14 @@ form.addEventListener("submit", validation);
 monsterAttack.addEventListener("input", updateFields);
 monsterDefense.addEventListener("input", updateFields);
 monsterHeatlh.addEventListener("input", updateFields);
+generatorButton.addEventListener("click", generate);
+
+
+async function generate(event){
+  await generateMonster();
+  monsterName.value = monsterNameGenerated;
+  monsterDescription.value = monsterDescriptionGenerated;
+}
 // Définir les fonctions
 function validation(event) {
   // Vérifier si le formulaire est valide
@@ -32,10 +40,19 @@ function validation(event) {
   if (monsterName.value.length < 3) {
     errorMessages.push("Le nom du monstre doit contenir au moins 3 caractères");
   }
-
+  if (monsterDescription.value.length < 3) {
+    errorMessages.push(
+      "La description du monstre doit contenir au moins 10 caractères"
+    );
+  }
   if (monsterDescription.value.length > 128) {
     errorMessages.push(
       "La description du monstre ne doit pas dépasser 128 caractères"
+    );
+  }
+  if (monsterAttack.value + monsterDefense.value + monsterHeatlh.value > 10) {
+    errorMessages.push(
+      "Le total des points d'attaque, de défense et de vie ne doit pas dépasser 10"
     );
   }
 

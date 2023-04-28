@@ -19,6 +19,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #121212;
   color: white;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -28,6 +30,17 @@ h1 {
 
 h2 {
   font-family: "PT Sans Narrow", sans-serif;
+}
+
+#monsterCardsSection h2{
+  text-transform: uppercase;
+}
+
+#monsterCardsSection{
+  margin: 25px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #363636;
 }
 
 h3,
@@ -143,6 +156,7 @@ nav #aboutlink:hover {
 #monsterForm {
   display: flex;
   flex-direction: column;
+  width: 700px;
 }
 
 #monsterForm input,
@@ -288,7 +302,12 @@ textarea {
   background-color: #0288d1 !important;
 }
 
+.greyBackground {
+  background-color: #616161 !important;
+}
+
 #createButton {
+  width: 100%;
   margin-top: 25px;
   padding: 10px;
   background-color: #121212 !important;
@@ -309,6 +328,7 @@ textarea {
   justify-items: center;
   color: #121212;
   text-align: center;
+  gap: 10px;
 }
 
 #monsterCardsSection {
@@ -316,13 +336,13 @@ textarea {
 }
 
 .monsterCard {
-  width: 270px;
+  width: 200px;
   border-radius: 5px;
   padding: 10px;
 }
 
 .monsterCard img {
-  width: 200px;
+  width: 100px;
 }
 .monsterCards #stats {
   display: flex;
@@ -344,6 +364,19 @@ textarea {
   padding: 5px;
   border-radius: 5px;
   margin-right: 10px;
+}
+
+#error{
+  color: #e64a19;
+  font-size: 1.5em;
+}
+
+.error{
+  color: #e64a19 !important;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

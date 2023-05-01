@@ -336,10 +336,11 @@ textarea {
   width: 200px;
   border-radius: 5px;
   padding: 10px;
-  height: 300px;
+  min-height: 300px;
+  max-height: fit-content;
 }
 
-.monsterCard p{
+.monsterCard p {
   text-align: justify;
 }
 
@@ -383,6 +384,11 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+#generator:hover {
+  cursor: pointer;
+  color: rebeccapurple;
 }
 
 footer {

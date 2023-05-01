@@ -21,13 +21,14 @@ monsterAttack.addEventListener("input", updateFields);
 monsterDefense.addEventListener("input", updateFields);
 monsterHeatlh.addEventListener("input", updateFields);
 generatorButton.addEventListener("click", generate);
-
-
-async function generate(event){
+/*
+async function generate(event) {
   await generateMonster();
   monsterName.value = monsterNameGenerated;
   monsterDescription.value = monsterDescriptionGenerated;
 }
+*/
+
 // Définir les fonctions
 function validation(event) {
   // Vérifier si le formulaire est valide

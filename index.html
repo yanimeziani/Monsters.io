@@ -47,7 +47,7 @@
                   type="text"
                   name="attackPoints"
                   id="attackPoints"
-                  value="0"
+                  placeholder="0"
                 />
               </div>
               <span> + </span>
@@ -57,7 +57,7 @@
                   type="text"
                   name="defensePoints"
                   id="defensePoints"
-                  value="0"
+                  placeholder="0"
                 />
               </div>
               <span> + </span>
@@ -67,7 +67,7 @@
                   type="text"
                   name="healthPoints"
                   id="healthPoints"
-                  value="0"
+                  placeholder="0"
                 />
               </div>
               <span> = </span>
@@ -86,7 +86,7 @@
                 class="monsterTypeSelectorButton"
                 type="radio"
                 name="monsterType"
-                id="monster1"
+                id="monsterImage1"
                 value="monster1"
                 checked
               />
@@ -94,28 +94,28 @@
                 class="monsterTypeSelectorButton"
                 type="radio"
                 name="monsterType"
-                id="monster2"
+                id="monsterImage2"
                 value="monster2"
               />
               <input
                 class="monsterTypeSelectorButton"
                 type="radio"
                 name="monsterType"
-                id="monster3"
+                id="monsterImage3"
                 value="monster3"
               />
               <input
                 class="monsterTypeSelectorButton"
                 type="radio"
                 name="monsterType"
-                id="monster4"
+                id="monsterImage4"
                 value="monster4"
               />
               <input
                 class="monsterTypeSelectorButton"
                 type="radio"
                 name="monsterType"
-                id="monster5"
+                id="monsterImage5"
                 value="monster5"
               />
             </div>
@@ -165,9 +165,9 @@
                 value="blue"
               />
             </div>
-            <div id="error" class="hidden"></div>
+            <ul id="error" class="hidden"></ul>
             <input id="createButton" type="submit" value="Créer" />
-            <p id="generator">Générer un monstre avec ChatGPT.</p>
+            <!--<p id="generator">Générer un monstre avec ChatGPT.</p>!-->
           </form>
         </div>
         <div id="boss">
@@ -205,9 +205,8 @@
       </div>
       <div id="monsterCardsSection">
         <h2>cartes</h2>
-        <div class="monsterCards">
-          <div id="monsterCard1" class="monsterCard greyBackground">
-            <!--<h3>Ben Laden</h3>
+        <div class="monsterCards" id="monsterCards">
+          <!--<h3>Ben Laden</h3>
             <img src="img/realMonsters/monster1.png" alt="" />
             <p>Je suis le boss</p>
             <div id="stats">
@@ -224,11 +223,6 @@
                 <p>1</p>
               </div>
             </div>!-->
-          </div>
-          <div id="monsterCard2" class="monsterCard greyBackground"></div>
-          <div id="monsterCard3" class="monsterCard greyBackground"></div>
-          <div id="monsterCard4" class="monsterCard greyBackground"></div>
-          <div id="monsterCard5" class="monsterCard greyBackground"></div>
         </div>
       </div>
     </main>
